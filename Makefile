@@ -32,7 +32,6 @@ ft_strjoin.c \
 ft_strtrim.c \
 ft_atoi.c \
 ft_calloc.c \
-ft_memccpy.c \
 ft_memcmp.c \
 ft_strdup.c \
 ft_strlcat.c \

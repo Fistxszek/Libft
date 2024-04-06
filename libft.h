@@ -47,7 +47,6 @@ void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 int				ft_atoi(const char *str);
 void			*ft_calloc(unsigned int nmemb, unsigned int size);
-void			*ft_memccpy(void *dst, const void *src, int c, unsigned int n);
 char			*ft_strdup(const char *str);
 char			*ft_itoa(int n);
 char			**ft_split(char const *s, char c);
