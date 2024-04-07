@@ -17,8 +17,10 @@ char	*ft_strnstr(const char *big, const char *sml, unsigned int len)
 	int				x;
 
 	i = 0;
-	if (!sml[0])
+	if (sml == NULL || ft_strlen((char *)sml) == 0)
 		return ((char *)big);
+	if ((unsigned int)ft_strlen((char *)sml) > len)
+		return (NULL);
 	while (i < len && big[i])
 	{
 		x = 0;

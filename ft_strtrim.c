@@ -41,6 +41,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int	finish;
 	int	len;
 
+	if (!s1)
+		return (NULL);
+	if (!set)
+		return (ft_strdup(s1));
+	if (ft_strlen((char *)s1) == 0)
+		return (ft_strdup(""));
 	len = ft_strlen((char *)s1) - 1;
 	start = compare_set(s1, set, 0);
 	finish = compare_set(s1, set, len) + 1;

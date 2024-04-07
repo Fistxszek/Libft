@@ -13,13 +13,16 @@
 
 void	*ft_calloc(unsigned int nmemb, unsigned int size)
 {
-	void		*result;
+	unsigned char	*result;
+	unsigned int	i;
 
+	i = 0;
 	if (!nmemb || !size || nmemb * size >= 2147483647)
 		return (NULL);
-	result = (char *)malloc(size * nmemb);
+	result = malloc(size * nmemb);
 	if (!result)
 		return (NULL);
-	ft_bzero(result, nmemb);
+	while (i < nmemb * size)
+		result[i++] = 0;
 	return (result);
 }
