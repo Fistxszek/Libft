@@ -40,8 +40,6 @@ ft_strnstr.c
 OBJ = $(SRC:.c=.o)
 NAME = libft.a
 
-.PHONY: all clean fclean re
-
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -58,3 +56,5 @@ fclean: clean
 	@rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
