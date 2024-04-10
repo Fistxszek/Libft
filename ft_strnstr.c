@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *big, const char *sml, unsigned int len)
 		while (i + x < len && big[i + x] == sml[x])
 		{
 			x++;
-			if (sml[x + 1] == '\0')
+			if (sml[x] == '\0')
 				return ((char *)(big + i));
 		}
 		i++;
